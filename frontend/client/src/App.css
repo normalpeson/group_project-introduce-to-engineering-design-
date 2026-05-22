@@ -1,0 +1,126 @@
+/* 전체 배경 */
+
+.background {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+
+  padding: 16px;
+}
+
+/* 컨테이너 정렬 */
+
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* 로그인 카드 */
+
+.login-card {
+  width: 100%;
+
+  min-height: 520px;
+
+  padding: 40px;
+
+  border-radius: 20px !important;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: white !important;
+}
+
+/* 제목 */
+
+.title {
+  font-weight: bold !important;
+
+  margin-bottom: 40px !important;
+
+  color: #222;
+}
+
+/* 로그인 버튼 */
+
+.login-button {
+  margin-top: 24px !important;
+
+  padding: 12px !important;
+
+  border-radius: 10px !important;
+
+  font-size: 16px !important;
+
+  font-weight: bold !important;
+
+  background-color: #1976d2 !important;
+}
+
+.login-button:hover {
+  background-color: #1565c0 !important;
+}
+
+/* 메시지 */
+
+.message {
+  margin-top: 20px !important;
+
+  color: #d32f2f;
+}
+
+/* 반응형 */
+
+@media (max-width: 600px) {
+  .login-card {
+    padding: 28px;
+
+    min-height: 460px;
+  }
+
+  .title {
+    font-size: 30px !important;
+  }
+}
+
+.subtitle-main {
+  font-weight: bold !important;
+  font-size: 22px !important;
+  color: #222;
+  margin-bottom: 2px !important;
+}
+
+/* 서브 안내 */
+.subtitle-sub {
+  font-size: 22px !important;
+  color: #222;
+  margin-bottom: 18px !important;
+}
+
+/* 로고 스타일 */
+.logo {
+  width: 120px;
+
+  display: block;
+  margin: 0 auto 16px auto;
+
+  padding: 10px;
+  background-color: #1976d2;
+
+  border-radius: 12px;
+
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+/* 모바일 대응 */
+@media (max-width: 600px) {
+  .logo {
+    width: 90px;
+  }
+}

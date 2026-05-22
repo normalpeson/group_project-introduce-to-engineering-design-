@@ -1,0 +1,116 @@
+
+.detail-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f7fb;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 30px;
+}
+
+/* 전체 카드 */
+.detail-paper {
+  width: 100%;
+  max-width: 1000px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 25px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 제목 */
+.detail-title {
+  background: #1976d2;
+  color: white;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+/* 상단 영역 */
+.detail-top {
+  display: flex;
+  gap: 20px;
+
+  margin-bottom: 20px;
+}
+
+/* 이미지 박스 */
+.detail-image-box {
+  flex: 1;
+}
+
+/* 이미지 핵심 수정 (잘림 방지) */
+.detail-image {
+  width: 100%;
+  height: 300px;
+
+  object-fit: contain; /* 🔥 핵심: cover → contain */
+
+  border-radius: 12px;
+
+  background: #f0f0f0;
+}
+
+/* 정보 영역 */
+.detail-info {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 12px;
+
+  font-size: 16px;
+}
+
+/* 정보 박스 스타일 */
+.detail-info div {
+  padding: 10px;
+
+  background: #f5f7fb;
+
+  border-radius: 8px;
+}
+
+/* 상세 설명 */
+.detail-description {
+  margin-top: 10px;
+
+  padding: 15px;
+
+  background: #f9f9f9;
+
+  border-radius: 10px;
+
+  min-height: 120px;
+
+  line-height: 1.6;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+
+  .detail-top {
+    flex-direction: column;
+  }
+
+  .detail-image {
+    height: 220px;
+  }
+}

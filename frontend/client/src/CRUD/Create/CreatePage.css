@@ -1,0 +1,133 @@
+
+/* =========================
+   전체
+========================= */
+
+body {
+  margin: 0;
+  background-color: #f5f7fb;
+}
+
+/* =========================
+   🔥 CREATE PAGE 전용 NAVBAR (핵심)
+========================= */
+
+.create-navbar {
+  background-color: #1976d2 !important;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.create-navbar-toolbar {
+  min-height: 55px !important;
+  padding: 0 16px !important;
+
+  display: flex;
+  align-items: center;
+}
+
+/* =========================
+   배너
+========================= */
+
+.create-header {
+  background-color: #1976d2;
+
+  padding: 60px 25px;
+
+  min-height: 220px;
+
+  border-radius: 15px;
+
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 25px auto;
+
+  color: white;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.create-title {
+  font-weight: 800 !important;
+}
+
+.create-subtitle {
+  opacity: 0.9;
+}
+
+/* =========================
+   폼
+========================= */
+
+.create-paper {
+  padding: 30px !important;
+
+  border-radius: 15px !important;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+
+  margin-bottom: 50px;
+
+  background-color: white;
+}
+
+/* =========================
+   버튼
+========================= */
+
+.upload-button {
+  background-color: #1976d2 !important;
+  color: white !important;
+
+  font-weight: 600 !important;
+
+  margin-bottom: 15px !important;
+}
+
+.upload-button:hover {
+  background-color: #1565c0 !important;
+}
+
+.submit-button {
+  margin-top: 20px !important;
+
+  background-color: #1976d2 !important;
+
+  font-weight: 700 !important;
+}
+
+.submit-button:hover {
+  background-color: #1565c0 !important;
+}
+
+/* =========================
+   input spacing
+========================= */
+
+.MuiTextField-root {
+  margin-top: 14px !important;
+}
+
+/* =========================
+   반응형
+========================= */
+
+@media screen and (max-width: 768px) {
+  .create-header {
+    width: 95%;
+    padding: 40px 15px;
+    min-height: 180px;
+  }
+
+  .create-paper {
+    padding: 20px !important;
+  }
+}

@@ -1,0 +1,12 @@
+# React
+frontend/node_modules
+
+# Python
+backend/__pycache__
+backend/venv
+
+# 환경변수
+.env
+
+# Mac
+.DS_Store

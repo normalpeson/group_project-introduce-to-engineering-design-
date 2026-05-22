@@ -1,0 +1,183 @@
+
+/* =========================
+   전체 배경
+========================= */
+
+body {
+  margin: 0;
+  background-color: #f5f7fb;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  background-color: #1976d2 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.navbar-toolbar {
+  min-height: 55px !important;
+  padding: 0 16px !important;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 32px;
+}
+
+.nav-buttons {
+  margin-left: auto;
+  display: flex;
+}
+
+/* 버튼 */
+.nav-button {
+  color: #1976d2 !important;
+  background-color: white !important;
+
+  font-weight: 600 !important;
+
+  margin-left: 8px !important;
+
+  border-radius: 8px !important;
+
+  padding: 8px 14px !important;
+
+  transition: all 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #e3f2fd !important;
+  color: #1565c0 !important;
+}
+
+/* =========================
+   배너
+========================= */
+
+.board-header {
+  background-color: #1976d2;
+
+  padding: 60px 25px;
+
+  min-height: 220px;
+
+  border-radius: 15px;
+
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 25px auto;
+
+  color: white;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   GRID (핵심 수정)
+========================= */
+
+
+.card-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 280px); /* 👈 3x3 고정 */
+
+  gap: 60px; /* 👈 간격 정상 */
+
+  justify-content: center; /* 👈 전체 가운데 정렬 */
+
+  width: 100%;
+
+  max-width: 1000px;
+
+  margin: 25px auto;
+}
+
+/* =========================
+   CARD (크기 확실히 적용)
+========================= */
+
+.post-card {
+  width: 280px;
+  height: 340px;
+
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12) !important;
+}
+
+/* =========================
+   IMAGE (정사각형 확실히)
+========================= */
+
+.post-image {
+  width: 100%;
+  height: 280px;   /* 👈 이미지 크게 */
+
+  object-fit: cover;
+
+  flex-shrink: 0;
+}
+
+/* =========================
+   TITLE (파란 배경)
+========================= */
+
+
+.post-title-box {
+  background-color: #1976d2;
+
+  padding: 6px 10px !important;  /* 👈 위아래 줄임 */
+
+  min-height: 50px;              /* 👈 핵심 (세로 줄이기) */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.post-title {
+  color: white !important;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+/* =========================
+   반응형
+========================= */
+
+@media screen and (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 280px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 280px);
+  }
+}
