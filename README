@@ -9,3 +9,5 @@ python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 python flask_server.py
+
+CRUD 폴더 안에서 SERACH라는 폴더 만들고 css파일과 js파일 만들어서 이미지 비교 및 검색 기능 구현
